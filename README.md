@@ -23,7 +23,7 @@ v18.20.3
 
 ## Rest란
 - Representational State Transfer
-- REST는 인터넷의 기본 프로토콜인 HTTP를 사용하여 서버 상의 자원을 처리하는 아키텍처 스타일입니다.
+- REST는 인터넷의 기본 프로토콜인 HTTP를 사용하여 서버 상의 자원을 처리하는 아키텍처 스타일.
 - 구성요소
   - Resource: 웹에서 접근 가능한 데이터나 서비스의 한 부분을 의미. 각 리소스는 고유한 URI(Uniform Resource Identifier)로 식별. 사용자 정보, 문서, 이미지 등이 리소스가 될 수 있음.
   - Method: REST는 주로 HTTP 메소드를 사용하여 리소스를 조작. 이에는 다음과 같은 메소드가 포함됨
