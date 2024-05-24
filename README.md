@@ -18,5 +18,7 @@ v18.20.3
 10.7.0
 ```
 
-### REST API 명세서
+# 1. REST API 명세서 작성
 [Notion으로 정리](https://capable-slime-584.notion.site/Yongs-Board-REST-API-93305c1c5f464cb990305dc039314c98?pvs=4)
+
+# 2. ERD / DDL / DCL 작성
