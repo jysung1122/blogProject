@@ -40,7 +40,7 @@ v18.20.3
 - 한 프로그램이 다른 프로그램의 기능이나 데이터를 사용할 수 있도록 해주는 다리와 같은 역할.
 
 # 2. ERD / DDL / DCL 작성
-- vscode 확장 프로그램인 ERD Editor (dineug: erd-editor.io) 설치하여 진행
+- vscode 확장 프로그램인 ERD Editor (dineug: erd-editor.io)과 MySQL(Weijan Chen: database-client.com) 설치하여 진행
 - board.vuerd.json
 
 - <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 20" src="https://github.com/jysung1122/aiModel/assets/56614779/fedfbaba-e4c3-460e-b939-79717d4c47a7">
