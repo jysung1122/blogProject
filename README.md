@@ -142,7 +142,7 @@ v18.20.3
       FOREIGN KEY (board_number)
       REFERENCES board (board_number);
   
-  CREATE USER 'developer'@'*' IDENTIFIED BY 'P!ssw0rd';
+  CREATE USER 'developer'@'%' IDENTIFIED BY 'P!ssw0rd';
   
   -- 뷰 생성
   CREATE View board_list_view AS
@@ -168,7 +168,7 @@ v18.20.3
   ```
   -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
 
-  GRANT ALL PRIVILEGES ON board.* TO 'developer'@'*';
+  GRANT ALL PRIVILEGES ON board.* TO 'developer'@'%';
 
   ```
 - DML Query 생성 후 실행 (하나하나 실행해가며 결과 보는거 추천)
