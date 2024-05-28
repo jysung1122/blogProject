@@ -330,6 +330,24 @@ v18.20.3
 8. Java version: 17
 9. Spring Web(Web), Validation(I/O), Spring Security(Security), Spring Data JPA(SQL), MySQL Driver(SQL), Lombok(Developer Tools).... Selected 6 dependencies 엔터
 10. Generate into this folder 선택
+11. board-back/src/test 에 있는 파일만 삭제
+12. board-back/src/main/resources 에 있는 static과 templates 삭제
+13. board-back/src/main/resources 에 있는 application.properties 수정
+    - username과 password는 mysql DB에서 DDL과 DCL에 사용했던 걸로 작성
+    ```
+    spring.application.name=board-back
+
+    server.port=4000
+    
+    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+    spring.datasource.url=jdbc:mysql://127.0.0.1/3306/board?serverTimezone=UTC&characterEncoding=UTF-8
+    spring.datasource.username=developer
+    spring.datasource.password=P!ssw0rd
+    
+    spring.servlet.multipart.max-file-size=100MB
+    spring.servlet.multipart.max-request-size=110MB
+    ```
+14. board-back/src/main/ (java/com/example/board_back) / 밑으로 각각 controller, dto, service, repository, provider, config, filter, exception, common 이름의 폴더 생성
 
 # 3. Front - End 개발하기
 - 아래 코드 vscode의 터미널에 입력 후 엔터
