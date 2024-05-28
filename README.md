@@ -41,3 +41,4 @@ v18.20.3
 
 # 2. ERD / DDL / DCL 작성
 - vscode 확장 프로그램인 ERD Editor (dineug: erd-editor.io) 설치하여 진행
+- board.vuerd.json
