@@ -42,7 +42,7 @@ v18.20.3
 # 2. ERD / DDL / DCL 작성
 - vscode 확장 프로그램인 ERD Editor (dineug: erd-editor.io)과 MySQL(Weijan Chen: database-client.com) 설치하여 진행
 - board.vuerd.json
-- 오타: border_number --> board_number 로 수정!!!
+- ✅ 오타: border_number --> board_number 로 수정!!! ✅
 
 - <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 20" src="https://github.com/jysung1122/aiModel/assets/56614779/fedfbaba-e4c3-460e-b939-79717d4c47a7">
 - <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 35" src="https://github.com/jysung1122/aiModel/assets/56614779/29223255-7109-4872-bee4-ab17408125fd">
