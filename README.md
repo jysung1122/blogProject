@@ -49,9 +49,10 @@ v18.20.3
 
 - board DB 생성 후 DDL Query 생성
 - <img width="299" alt="스크린샷 2024-05-28 오전 10 47 19" src="https://github.com/jysung1122/aiModel/assets/56614779/772e411e-3f3f-4e4d-89aa-335841280600">
+
 - DDL 코드
   ```
-  -- Active: 1716358723865@@127.0.0.1@3306@board
+  -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
 
         
   CREATE TABLE board
@@ -140,4 +141,13 @@ v18.20.3
     ADD CONSTRAINT FK_board_TO_comment
       FOREIGN KEY (border_number)
       REFERENCES board (border_number);
+
+  CREATE USER 'developer'@'*' IDENTIFIED BY 'P!ssw0rd';
+  ```
+- DCL Query 생성
+  ```
+  -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
+
+  GRANT ALL PRIVILEGES ON board.* TO 'developer'@'*';
+
   ```
