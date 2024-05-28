@@ -51,14 +51,12 @@ v18.20.3
 - <img width="299" alt="스크린샷 2024-05-28 오전 10 47 19" src="https://github.com/jysung1122/aiModel/assets/56614779/772e411e-3f3f-4e4d-89aa-335841280600">
 
 - DDL 코드 작성 후 하나하나 실행
-- 오타 border_number --> board_number 수정
   ```
   -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
 
-        
   CREATE TABLE board
   (
-    border_number  INT         NOT NULL AUTO_INCREMENT COMMENT '게시물 번호',
+    board_number  INT         NOT NULL AUTO_INCREMENT COMMENT '게시물 번호',
     title          TEXT        NOT NULL COMMENT '게시물 제목',
     content        TEXT        NOT NULL COMMENT '게시물 내용',
     write_datetime DATETIME    NOT NULL COMMENT '게시물 작성 날짜 및 시간',
@@ -66,24 +64,24 @@ v18.20.3
     comment_count  INT         NOT NULL DEFAULT 0 COMMENT '게시물 댓글 수',
     view_count     VARCHAR(50) NOT NULL DEFAULT 0 COMMENT '게시물 조회 수',
     writer_email   VARCHAR(50) NOT NULL COMMENT '게시물 작성자 이메일',
-    PRIMARY KEY (border_number)
+    PRIMARY KEY (board_number)
   ) COMMENT '게시물 테이블';
   
   CREATE TABLE comment
   (
-    comment_number INT         NOT NULL AUTO_INCREMENT COMMENT '댓글 번호',
+    comment_number INT         NOT NULL COMMENT '댓글 번호',
     content        TEXT        NOT NULL COMMENT '댓글 내용',
     write_datetime DATETIME    NOT NULL COMMENT '작성 날짜 및 시간',
     user_email     VARCHAR(50) NOT NULL COMMENT '사용자 이메일',
-    border_number  INT         NOT NULL COMMENT '게시물 번호',
+    board_number  INT         NOT NULL COMMENT '게시물 번호',
     PRIMARY KEY (comment_number)
   ) COMMENT '댓글 테이블';
   
   CREATE TABLE favorite
   (
     user_email    VARCHAR(50) NOT NULL COMMENT '사용자 이메일',
-    border_number INT         NOT NULL COMMENT '게시물 번호',
-    PRIMARY KEY (user_email, border_number)
+    board_number INT         NOT NULL COMMENT '게시물 번호',
+    PRIMARY KEY (user_email, board_number)
   ) COMMENT '좋아요 테이블';
   
   CREATE TABLE image
@@ -115,8 +113,8 @@ v18.20.3
   
   ALTER TABLE image
     ADD CONSTRAINT FK_board_TO_image
-      FOREIGN KEY (border_number)
-      REFERENCES board (border_number);
+      FOREIGN KEY (board_number)
+      REFERENCES board (board_number);
   
   ALTER TABLE board
     ADD CONSTRAINT FK_user_TO_board
@@ -130,8 +128,8 @@ v18.20.3
   
   ALTER TABLE favorite
     ADD CONSTRAINT FK_board_TO_favorite
-      FOREIGN KEY (border_number)
-      REFERENCES board (border_number);
+      FOREIGN KEY (board_number)
+      REFERENCES board (board_number);
   
   ALTER TABLE comment
     ADD CONSTRAINT FK_user_TO_comment
@@ -140,11 +138,11 @@ v18.20.3
   
   ALTER TABLE comment
     ADD CONSTRAINT FK_board_TO_comment
-      FOREIGN KEY (border_number)
-      REFERENCES board (border_number);
-
+      FOREIGN KEY (board_number)
+      REFERENCES board (board_number);
+  
   CREATE USER 'developer'@'*' IDENTIFIED BY 'P!ssw0rd';
-
+  
   -- 뷰 생성
   CREATE View board_list_view AS
   SELECT
@@ -174,7 +172,7 @@ v18.20.3
   ```
 - DML Query 생성 후 실행 (하나하나 실행해가며 결과 보는거 추천)
   ```
-  -- Active: 1716358723865@@127.0.0.1@3306@board
+  -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
   -- 회원가입
   INSERT INTO
   user VALUES
