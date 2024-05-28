@@ -318,3 +318,9 @@ v18.20.3
   ```
 - 최종적으로
 <img width="299" alt="스크린샷 2024-05-28 오후 3 31 32" src="https://github.com/jysung1122/aiModel/assets/56614779/a6513769-260c-415d-a45b-ea2e47c30675">
+
+# 3. Front - End 개발하기
+- 아래 코드 vscode의 터미널에 입력 후 엔터
+  ```
+  npx create-react-app board-front --template typescript
+  ```
