@@ -51,6 +51,7 @@ v18.20.3
 - <img width="299" alt="스크린샷 2024-05-28 오전 10 47 19" src="https://github.com/jysung1122/aiModel/assets/56614779/772e411e-3f3f-4e4d-89aa-335841280600">
 
 - DDL 코드 작성 후 하나하나 실행
+- 오타 border_number --> board_number 수정
   ```
   -- Active: 1716358723865@@127.0.0.1@3306@board  MYSQL
 
