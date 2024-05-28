@@ -87,7 +87,7 @@ v18.20.3
   
   CREATE TABLE image
   (
-    border_number INT  NOT NULL COMMENT '게시물 번호',
+    board_number INT  NOT NULL COMMENT '게시물 번호',
     image         TEXT NOT NULL COMMENT '게시물 이미지 URL'
   ) COMMENT '게시물 이미지 테이블';
   
