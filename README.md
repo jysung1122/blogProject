@@ -334,6 +334,11 @@ v18.20.3
 - 필요한 폴더 생성, 필요없는 파일 삭제
 <img width="299" alt="스크린샷 2024-05-29 오전 9 08 28" src="https://github.com/jysung1122/aiModel/assets/56614779/bdf5200d-b5d8-474f-8bd1-f95c5e3dca76">
 
+## 개발 순서
+1. provider/JwtProvider.java
+2. filter/JwtAuthenticationFilter/java
+
+
 ### 개발 시작
 
 # 3. Front - End 개발하기
