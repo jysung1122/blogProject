@@ -338,7 +338,6 @@ v18.20.3
 1. provider/JwtProvider.java
 2. filter/JwtAuthenticationFilter/java
 3. config/WebSecurityConfig.java
-4. config/CorsConfig.java
 
 
 ### 개발 시작
