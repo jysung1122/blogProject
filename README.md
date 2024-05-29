@@ -331,6 +331,9 @@ v18.20.3
 9. Spring Web(Web), Validation(I/O), Spring Security(Security), Spring Data JPA(SQL), MySQL Driver(SQL), Lombok(Developer Tools).... Selected 6 dependencies 엔터
 10. Generate into this folder 선택
 
+- 필요한 폴더 생성, 필요없는 파일 삭제
+<img width="299" alt="스크린샷 2024-05-29 오전 9 08 28" src="https://github.com/jysung1122/aiModel/assets/56614779/bdf5200d-b5d8-474f-8bd1-f95c5e3dca76">
+
 ### 개발 시작
 
 # 3. Front - End 개발하기
@@ -338,3 +341,6 @@ v18.20.3
   ```
   npx create-react-app board-front --template typescript
   ```
+  
+- 필요한 폴더 생성, 필요없는 파일 삭제
+<img width="299" alt="스크린샷 2024-05-29 오전 9 08 57" src="https://github.com/jysung1122/aiModel/assets/56614779/c07e50cd-ab08-4c97-86aa-66d3bb04629e">
