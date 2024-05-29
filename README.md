@@ -322,7 +322,7 @@ v18.20.3
 # 3. Back - End 개발하기
 1. vscode 확장 프로그램 Spring Initializer Java Support(MS꺼) 설치
 2. vscode에서 F1 키를 누르고 Spring Initializer: Create a Gradle Project... 선택
-3. version: 3.3
+3. version: 3.3.0
 4. language: Java
 5. com.example (디폴트로 GO 아님 회사명 등등)
 6. Artifact: board-back
