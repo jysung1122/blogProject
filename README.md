@@ -337,6 +337,7 @@ v18.20.3
 ## 개발 순서
 1. provider/JwtProvider.java
 2. filter/JwtAuthenticationFilter/java
+3. config/WebSecurityConfig.java
 
 
 ### 개발 시작
