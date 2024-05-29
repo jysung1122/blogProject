@@ -45,11 +45,7 @@ v18.20.3
 - ✅ 오타: border_number --> board_number 로 수정!!! ✅
 
 <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 20" src="https://github.com/jysung1122/aiModel/assets/56614779/fedfbaba-e4c3-460e-b939-79717d4c47a7">
-
-
 <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 35" src="https://github.com/jysung1122/aiModel/assets/56614779/29223255-7109-4872-bee4-ab17408125fd">
-
-
 <img width="1440" alt="스크린샷 2024-05-28 오전 10 42 42" src="https://github.com/jysung1122/aiModel/assets/56614779/704fd9eb-26af-4a90-9ebb-a4586dbf8ddc">
 
 - board DB 생성 후 DDL Query 생성
